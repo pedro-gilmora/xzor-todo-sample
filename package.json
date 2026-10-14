@@ -1,0 +1,16 @@
+{
+  "name": "xzor-todo-sample",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "xzor dev",
+    "build": "xzor build"
+  },
+  "devDependencies": {
+    "@source-crafter/xzor": "^0.1.6",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "@source-crafter/xzor-runtime": "^0.1.6"
+  }
+}

@@ -1,0 +1,36 @@
+@page "/"
+@import TodoItem from "../components/TodoItem.xzor"
+@import { type TodoService } from "../services/todos"
+@inject TodoService todos
+
+@code {
+  text = "";
+
+  add() {
+    const text = this.text.trim();
+    if (!text) return;
+    this.todos.add(text);
+    this.text = "";
+  }
+}
+
+<form class="new" @onsubmit="add" @onsubmit:preventDefault>
+  <input @bind="text" @bind:event="oninput" placeholder="What needs doing?" autofocus />
+  <button type="submit" disabled="@(!text.trim())">Add</button>
+</form>
+
+@if (todos.items.length === 0) {
+  <p class="empty">Nothing to do. Enjoy!</p>
+} else {
+  <ul class="list">
+    @for (const todo of todos.items) {
+      <TodoItem @key="todo.id" todo="todo" changed="() => todos.save()" removed="t => todos.remove(t.id)" />
+    }
+  </ul>
+  <footer>
+    <span>@todos.pending pending</span>
+    @if (todos.pending < todos.items.length) {
+      <button class="link" @onclick="() => todos.clearDone()">Clear done</button>
+    }
+  </footer>
+}

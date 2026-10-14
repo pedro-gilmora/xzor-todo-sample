@@ -1,0 +1,23 @@
+{
+  "name": "xzor todo sample",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "remoteEnv": {
+    "PATH": "/home/vscode/.bun/bin:${containerEnv:PATH}"
+  },
+  // Bun, the npm packages (compiler, runtime, TypeScript 7) and a first build.
+  "postCreateCommand": "bash .devcontainer/setup.sh",
+  // Every time VS Code attaches: the xzor extension, and the app itself (build, watch and serve on port 3000).
+  "postAttachCommand": {
+    "extension": "bash .devcontainer/install-extension.sh",
+    "app": "bun run dev"
+  },
+  "forwardPorts": [3000],
+  "portsAttributes": {
+    "3000": { "label": "Todo app", "onAutoForward": "openPreview" }
+  },
+  "customizations": {
+    "codespaces": {
+      "openFiles": ["pages/Todos.xzor"]
+    }
+  }
+}

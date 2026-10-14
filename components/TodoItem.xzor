@@ -1,0 +1,16 @@
+@import { type EventCallback } from "@source-crafter/xzor-runtime"
+@import { type Todo } from "../services/todos"
+
+@code {
+  todo!: Todo;
+  changed?: EventCallback<Todo>;
+  removed?: EventCallback<Todo>;
+}
+
+<li class="@(todo.done ? "done" : "")">
+  <label>
+    <input type="checkbox" @bind="todo.done" @bind:after="() => changed?.(todo)" />
+    <span>@todo.text</span>
+  </label>
+  <button class="remove" title="Remove" @onclick="() => removed?.(todo)">×</button>
+</li>

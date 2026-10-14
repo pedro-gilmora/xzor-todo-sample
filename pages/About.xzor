@@ -1,0 +1,15 @@
+@page "/about"
+
+<section class="about">
+  <h2>About</h2>
+  <p>
+    A todo app written with <a href="https://github.com/pedro-gilmora/source-crafter-xzor" rel="external">xzor</a>:
+    Blazor-style <code>.xzor</code> components compiled to typed TypeScript.
+  </p>
+  <ul>
+    <li><code>pages/Todos.xzor</code>: the list, a page at <code>/</code>.</li>
+    <li><code>components/TodoItem.xzor</code>: one row, reporting changes through callbacks.</li>
+    <li><code>services/todos.ts</code>: the data, injected with <code>@@inject</code>.</li>
+    <li><code>Routes.xzor</code> and <code>layouts/Layout.xzor</code>: routing and the shared layout.</li>
+  </ul>
+</section>

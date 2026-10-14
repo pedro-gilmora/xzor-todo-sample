@@ -1,0 +1,7 @@
+@import Layout from "./layouts/Layout.xzor"
+
+@* Every page renders inside Layout; unknown addresses get the not-found message. *@
+@ClientRoutes(route) {
+  @notFound { <Layout><p class="empty">Nothing at @route.path</p></Layout> }
+  @default(page) { <Layout>@page</Layout> }
+}

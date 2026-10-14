@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "lib": ["ES2022", "ESNext.Disposable", "DOM"],
+    "strict": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "rootDirs": [".", ".xzor"]
+  },
+  "include": ["**/*.ts", ".xzor/**/*.ts"],
+  "exclude": ["dist", "node_modules"]
+}

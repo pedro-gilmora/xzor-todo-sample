@@ -1,0 +1,13 @@
+@import { NavLink } from "@source-crafter/xzor-runtime"
+@import { href } from "../routes"
+
+<header>
+  <h1><span class="at">@@</span>todos</h1>
+  <nav>
+    <NavLink href="@href.Todos({})" match="exact">Todos</NavLink>
+    <NavLink href="@href.About({})">About</NavLink>
+  </nav>
+</header>
+<main>
+  @slot
+</main>
