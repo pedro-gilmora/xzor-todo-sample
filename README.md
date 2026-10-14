@@ -6,7 +6,7 @@ A small todo app written with [xzor](https://github.com/pedro-gilmora/source-cra
 
 ## Try it in the browser
 
-Click the badge above. The codespace installs everything, starts `bun run dev`, and opens the running app in a preview tab next to the code. Edit any `.xzor` file, save, and reload the preview.
+Click the badge above. The codespace installs everything, starts `bun run dev`, and opens the running app in a preview tab next to the code. Edit any `.xzor` file and save: the preview reloads by itself.
 
 ## Run it locally
 

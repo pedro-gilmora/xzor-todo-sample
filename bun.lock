@@ -5,24 +5,24 @@
     "": {
       "name": "xzor-todo-sample",
       "dependencies": {
-        "@source-crafter/xzor-runtime": "^0.1.6",
+        "@source-crafter/xzor-runtime": "^0.1.7",
       },
       "devDependencies": {
-        "@source-crafter/xzor": "^0.1.6",
+        "@source-crafter/xzor": "^0.1.7",
         "typescript": "^7.0.2",
       },
     },
   },
   "packages": {
-    "@source-crafter/xzor": ["@source-crafter/xzor@0.1.6", "", { "optionalDependencies": { "@source-crafter/xzor-cli-darwin-arm64": "0.1.6", "@source-crafter/xzor-cli-linux-x64": "0.1.6", "@source-crafter/xzor-cli-win32-x64": "0.1.6" }, "peerDependencies": { "@source-crafter/xzor-runtime": "0.1.6", "typescript": "^7.0.2" }, "bin": { "xzor": "bin/xzor.js" } }, "sha512-j1R8EEGHQF+sXuVyGsLne2/wVSuMc7c4UdZVn+1g7pGFfKIbpi2qDDHtFiTO9/KpLOwbGdEOtWlMEQk5pRoOXQ=="],
+    "@source-crafter/xzor": ["@source-crafter/xzor@0.1.7", "", { "optionalDependencies": { "@source-crafter/xzor-cli-darwin-arm64": "0.1.7", "@source-crafter/xzor-cli-linux-x64": "0.1.7", "@source-crafter/xzor-cli-win32-x64": "0.1.7" }, "peerDependencies": { "@source-crafter/xzor-runtime": "0.1.7", "typescript": "^7.0.2" }, "bin": { "xzor": "bin/xzor.js" } }, "sha512-A+EimITYUms9fEFBXQm6qsh/LfjWLECqXEf/wTHCnw4AzCweI9cs6BK3tlMsA0lDGTvzrbqQM7iVe0k6QPv4Cw=="],
 
-    "@source-crafter/xzor-cli-darwin-arm64": ["@source-crafter/xzor-cli-darwin-arm64@0.1.6", "", { "os": "darwin", "cpu": "arm64" }, "sha512-4QPRE2kXzVpdlZa3fTmAg4BHhigF9pPAZ569XMd6ryxXZ7sZTpFT4QLar8baIu42Yp5RSlelBzKvMUuz28Cr6w=="],
+    "@source-crafter/xzor-cli-darwin-arm64": ["@source-crafter/xzor-cli-darwin-arm64@0.1.7", "", { "os": "darwin", "cpu": "arm64" }, "sha512-sGhpqim1SovSpUDMsySypR5jfyivQw7RCMnk+6PtE2GtkOTg+aRsuoS0z75t+KOiEUnuIn2Z7BkleqbyywZQhQ=="],
 
-    "@source-crafter/xzor-cli-linux-x64": ["@source-crafter/xzor-cli-linux-x64@0.1.6", "", { "os": "linux", "cpu": "x64" }, "sha512-VauOs24VCjCcaohjP3q9AhRdcwgYYtbvfnSQ5eUnaBojcXalqO23WUtGy7Cf7ZUPi7nY31Q1XkE4fXAyRUvlYQ=="],
+    "@source-crafter/xzor-cli-linux-x64": ["@source-crafter/xzor-cli-linux-x64@0.1.7", "", { "os": "linux", "cpu": "x64" }, "sha512-X5iDCwNx/bJZW2gqBfXVU+HwayiVuJEkGymPripqnCT8h41eiME09Uaj0MT2IjPirzIkKW2PG7uSMbTAozQ62w=="],
 
-    "@source-crafter/xzor-cli-win32-x64": ["@source-crafter/xzor-cli-win32-x64@0.1.6", "", { "os": "win32", "cpu": "x64" }, "sha512-Fwiat9br1VTmMhpQmOAe0b5qwNAS4lDFkWQQWpisYw1MISAbC1YgHOYj2bJFoM6Xt2gijfdKSIyxIAN7CJhbUw=="],
+    "@source-crafter/xzor-cli-win32-x64": ["@source-crafter/xzor-cli-win32-x64@0.1.7", "", { "os": "win32", "cpu": "x64" }, "sha512-AcO/PM2Q+igXfma9V9h6tYSNdCwp1GtI7d3ArGukk3Ov+dKRwGjyfe1FnM9ta3W1yQBOYl4B0FHzCUXuzz22tw=="],
 
-    "@source-crafter/xzor-runtime": ["@source-crafter/xzor-runtime@0.1.6", "", {}, "sha512-XUpEMidDniO+ojV/fyWT5scLFCaur/0Jdj9PVXmDtpq02M1vG/DN+hO03pK+fZdMlxdxtISSFh1mAcKuI4XdLg=="],
+    "@source-crafter/xzor-runtime": ["@source-crafter/xzor-runtime@0.1.7", "", {}, "sha512-Mu5zgiJehC46i6CdnsLvGdd6L5sZdwsKeWDebm72XDsC79kCby/tMX7TFkllp9nax6SxLBDPaGvCqBbyyvgNWQ=="],
 
     "@typescript/typescript-aix-ppc64": ["@typescript/typescript-aix-ppc64@7.0.2", "", { "os": "aix", "cpu": "ppc64" }, "sha512-MTKKkWB7p/0E9xi1d1tHtZ5PiLkGEMIq88pK2CubZjOsLtYTLqhgIgi6zepFa+9GHZ6h05NMCkQxGKiPXMxXtQ=="],
 

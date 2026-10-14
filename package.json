@@ -7,10 +7,10 @@
     "build": "xzor build"
   },
   "devDependencies": {
-    "@source-crafter/xzor": "^0.1.6",
+    "@source-crafter/xzor": "^0.1.7",
     "typescript": "^7.0.2"
   },
   "dependencies": {
-    "@source-crafter/xzor-runtime": "^0.1.6"
+    "@source-crafter/xzor-runtime": "^0.1.7"
   }
 }
